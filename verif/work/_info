@@ -1,0 +1,576 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1752007484
+!i10b 1
+!s100 J@Bf42a<9Q9R;nJSZl2>B2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`RPVM1MZ;4Jg:@>=L=_o02
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1751998922
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv
+!i122 0
+Z6 L0 3 11
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1752007484.000000
+!s107 D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif/tb_top.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux4.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/HazardDetection.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv|
+Z9 !s90 -reportprogress|300|-f|compile_verilog|
+!i113 1
+Z10 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 Hg?V;RURG?07lVekgS@H71
+R3
+IBba[SL:QoZ`I1569ZGZ6G3
+R4
+S1
+R0
+w1752005486
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv
+!i122 0
+L0 3 38
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif/tb_top.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux4.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/HazardDetection.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv|
+R9
+!i113 1
+R10
+vALUController
+R1
+R2
+!i10b 1
+!s100 e:`fmCMcbc[P_`l?nJYYe2
+R3
+IB0oB_c55A850mK9bbzGkH1
+R4
+S1
+R0
+w1752006369
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
+!i122 0
+Z12 L0 3 29
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@a@l@u@controller
+vBranchUnit
+R1
+R2
+!i10b 1
+!s100 6mfj04GQ4<NdfP3N3I?:l2
+R3
+Ii<<Li:5L:H:?220SlS?n`2
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv
+!i122 0
+L0 3 26
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@branch@unit
+vController
+R1
+R2
+!i10b 1
+!s100 3?m7Z9i>idc13S]HC3GXU3
+R3
+I?]Z5BeXfWRLAGcPF>n4f^1
+R4
+S1
+R0
+w1752007298
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
+!i122 0
+L0 3 36
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@controller
+vdatamemory
+R1
+R2
+!i10b 1
+!s100 :U7:`NI4[Mdm`JaQ@69]m0
+R3
+IL0fOlD`NEfQS0Lajae1?H3
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv
+!i122 0
+L0 3 55
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vDatapath
+R1
+Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 G`84YGhFe8i]]6KVcbO?20
+DXx4 work 16 Datapath_sv_unit 0 22 F_5><60;@>A^Cm[BQm0H@2
+R2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 cWkHWmncDlQL`5?j6eNGC1
+IF33De4>Z<bhK4TXfTUcRG0
+!s105 Datapath_sv_unit
+S1
+R0
+R5
+Z14 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
+Z15 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
+!i122 0
+L0 5 312
+R7
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@datapath
+XDatapath_sv_unit
+R1
+R13
+R2
+VF_5><60;@>A^Cm[BQm0H@2
+r1
+!s85 0
+!i10b 1
+!s100 K:EP;anA:W4111N=WXz4a0
+IF_5><60;@>A^Cm[BQm0H@2
+!i103 1
+S1
+R0
+R5
+R14
+R15
+!i122 0
+L0 3 0
+R7
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@datapath_sv_unit
+vflopr
+R1
+R2
+!i10b 1
+!s100 ElcDNl85mGL9dF?Xd3Za63
+R3
+InU1eXN]al[51^z[85<Vg62
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv
+!i122 0
+L0 3 16
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vForwardingUnit
+R1
+R2
+!i10b 1
+!s100 CEcEo:_iR9UO6Xd4H`cAC3
+R3
+IWKLLf1mkneJHTZ1ibSCWd3
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv
+!i122 0
+L0 3 18
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@forwarding@unit
+vHazardDetection
+R1
+R2
+!i10b 1
+!s100 =:@:A`@P^b2GYnY^68bZa2
+R3
+ImaUldRVDbTg_Z1F;TT4QE0
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/HazardDetection.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/HazardDetection.sv
+!i122 0
+R6
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@hazard@detection
+vimm_Gen
+R1
+R2
+!i10b 1
+!s100 MoF6VoA8LYdh2M7Z[fQ=d2
+R3
+IzC1O_JceBQG5JQBYJW7FD2
+R4
+S1
+R0
+w1752004361
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
+!i122 0
+R12
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nimm_@gen
+vinstructionmemory
+R1
+R2
+!i10b 1
+!s100 6>jnlWCg62QiF^iRiX?C81
+R3
+I;NkGnacGP[4?>7[8:nYiQ3
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv
+!i122 0
+L0 4 23
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vMemoria32
+R1
+R2
+!i10b 1
+!s100 oLjQ]Qb`C9VE3a1DaRF6=0
+R3
+ID_`CdB]hJnX2fVh=1<=c<1
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv
+!i122 0
+Z16 L0 26 94
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@memoria32
+vMemoria32Data
+R1
+R2
+!i10b 1
+!s100 ]NU@J;o]<e]AW?:CD;Fg21
+R3
+I9D<JCko6Ung>NUXaOiHID1
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv
+!i122 0
+R16
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@memoria32@data
+vmux2
+R1
+R2
+!i10b 1
+!s100 9Hgm:_HaC7CH^93]dTO>S3
+R3
+I4e?YYJ?TFHPm>job0o32n1
+R4
+S1
+R0
+w1752007306
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv
+!i122 0
+L0 3 12
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vmux4
+R1
+R2
+!i10b 1
+!s100 PkRNb1:FWO8e2Pa@XbPjl1
+R3
+I_f;Il[oOdk_JL14J`4b;?2
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux4.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux4.sv
+!i122 0
+L0 3 14
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+XPipe_Buf_Reg_PKG
+R1
+R2
+!i10b 1
+!s100 k?>B3>50o;E82z7G4HUZg2
+R3
+IG`84YGhFe8i]]6KVcbO?20
+VG`84YGhFe8i]]6KVcbO?20
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv
+!i122 0
+L0 1 0
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@pipe_@buf_@reg_@p@k@g
+vramOnChip32
+R2
+!i10b 1
+!s100 ANVMcJ>zoMilMS0;3XPLA0
+R3
+I;_KG0O:1@0CA_Il105AOm1
+R4
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v
+!i122 0
+Z17 L0 40 78
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nram@on@chip32
+vramOnChipData
+R2
+!i10b 1
+!s100 _gV6BH4AzTX?eTUV22eHj0
+R3
+IQnlYbSdz`2]7SBQ0oDFR[3
+R4
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v
+!i122 0
+R17
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nram@on@chip@data
+vRegFile
+R1
+R2
+!i10b 1
+!s100 :?B`7Zn]Gb5m`Z5KL_^>03
+R3
+I=>XaiS>Kim@5BUh@7ChmS0
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv
+!i122 0
+L0 3 35
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@reg@file
+vriscv
+R1
+R2
+!i10b 1
+!s100 ZG:[k5[V9?jY[REj7dU`m2
+R3
+IE<fNcB`9FE?0U[iMJk3j02
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv
+!i122 0
+L0 3 71
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vtb_top
+R1
+R2
+!i10b 1
+!s100 <k4lG_MkNX?2l=l78L8cm0
+R3
+I0SEzihMmha8[SjAzd8gdY1
+R4
+S1
+R0
+R5
+8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif/tb_top.sv
+FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif/tb_top.sv
+!i122 0
+L0 3 62
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
