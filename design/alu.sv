@@ -33,7 +33,7 @@ module alu#(
                     ALUResult = $signed(SrcA) >>> (SrcB & 32'h1F);
             4'b1000:        // BEQ
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
-            4'b1100:
+            4'b1100:        // SLT, SLTI
                     ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
             default:
                     ALUResult = 0;
