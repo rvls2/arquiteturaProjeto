@@ -1,6 +1,6 @@
 # Arquitetura Projeto
 
-Deyvson Gabriel Bastos Fernandes\n
-Lucas José Duarte Cavalcanti\n
-Milla Rwana de Araújo Silva\n
-Rayssa Vitória Lima da Silva\n
+Deyvson Gabriel Bastos Fernandes (dgbf)
+Lucas José Duarte Cavalcanti (ljds)
+Milla Rwana de Araújo Silva (mras3)
+Rayssa Vitória Lima da Silva (rvls2)
