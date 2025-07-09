@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1752007484
+Z2 !s110 1752057193
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ I`RPVM1MZ;4Jg:@>=L=_o02
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1751998922
+Z5 w1752055366
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv
 !i122 0
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1752007484.000000
+Z8 !s108 1752057193.000000
 !s107 D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif/tb_top.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux4.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/HazardDetection.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,17 +37,17 @@ valu
 R1
 R2
 !i10b 1
-!s100 Hg?V;RURG?07lVekgS@H71
+!s100 ^GjNB[dXkI1OgoRKB_9dQ3
 R3
-IBba[SL:QoZ`I1569ZGZ6G3
+IXYoO]WncFa4GR]4GGRzFK1
 R4
 S1
 R0
-w1752005486
+w1752056671
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv
 !i122 0
-L0 3 38
+L0 3 40
 R7
 r1
 !s85 0
@@ -67,7 +67,7 @@ IB0oB_c55A850mK9bbzGkH1
 R4
 S1
 R0
-w1752006369
+R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
 !i122 0
@@ -117,7 +117,7 @@ I?]Z5BeXfWRLAGcPF>n4f^1
 R4
 S1
 R0
-w1752007298
+R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
 !i122 0
@@ -293,7 +293,7 @@ IzC1O_JceBQG5JQBYJW7FD2
 R4
 S1
 R0
-w1752004361
+R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
 !i122 0
@@ -392,7 +392,7 @@ I4e?YYJ?TFHPm>job0o32n1
 R4
 S1
 R0
-w1752007306
+R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv
 !i122 0

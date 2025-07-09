@@ -1,3 +1,6 @@
-addi x4,x0,5
-addi x5,x0,3
-add x6,x5,x4
+addi x4,x0,-2
+addi x5,x0,2
+slt x6,x5,x4
+slt x7,x4,x5
+slti x8,x5,3
+slti x9,x5,1
