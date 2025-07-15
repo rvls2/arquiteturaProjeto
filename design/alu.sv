@@ -19,7 +19,7 @@ module alu#(
                     ALUResult = SrcA & SrcB;
             4'b0001:        // OR
                     ALUResult = SrcA | SrcB;
-            4'b0010:        // ADD, ADDI
+            4'b0010:        // ADD, ADDI, LW, LH, LB, LBU, SW, SH, SB, SBU
                     ALUResult = $signed(SrcA) + $signed(SrcB);
             4'b0011:        // XOR
                     ALUResult = SrcA ^ SrcB;
@@ -33,7 +33,11 @@ module alu#(
                     ALUResult = $signed(SrcA) >>> (SrcB & 32'h1F);
             4'b1000:        // BEQ
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
-            4'b1100:        // SLT, SLTI
+            4'b1001:        // BNE
+                    ALUResult = (SrcA != SrcB) ? 1 : 0;
+            4'b1010:        // BGE
+                    ALUResult = ($signed(SrcA) >= $signed(SrcB)) ? 1 : 0;
+            4'b1100:        // SLT, SLTI, BLT
                     ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
             default:
                     ALUResult = 0;
