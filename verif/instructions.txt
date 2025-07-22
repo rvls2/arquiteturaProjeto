@@ -1,4 +1,4 @@
-addi x4,x0,0
-addi x5,x0,5
-addi x4,x4,1
-blt x4,x5,-4
+addi x4,x0,-1
+sb x4,0(x0)
+lb x5,0(x0)
+lbu x6,0(x0)
