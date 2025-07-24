@@ -16,10 +16,11 @@ module Controller (
     output logic MemRead,  //Data memory contents designated by the address input are put on the Read data output
     output logic MemWrite, //Data memory contents designated by the address input are replaced by the value on the Write data input.
     output logic [1:0] ALUOp,  //00: LW/SW; 01: Branch; 10: Rtype/Itype; 11: Jal
-    output logic Branch  //0: branch is not taken; 1: branch is taken
+    output logic Branch,  //0: branch is not taken; 1: branch is taken
+    output logic Halt
 );
 
-  logic [6:0] R_TYPE, I_TYPE, LW, SW, BR, JAL;
+  logic [6:0] R_TYPE, I_TYPE, LW, SW, BR, JAL, HALT;
 
   assign R_TYPE = 7'b0110011;  // R type
   assign I_TYPE = 7'b0010011;  // I type
@@ -27,13 +28,15 @@ module Controller (
   assign SW = 7'b0100011;  //sw
   assign BR = 7'b1100011;  // branch
   assign JAL = 7'b1101111;  // jal
+  assign HALT = 7'b1111111; // Halt
 
-  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == I_TYPE);
-  assign MemtoReg = (Opcode == LW);
-  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == I_TYPE || Opcode == JAL);
-  assign MemRead = (Opcode == LW);
-  assign MemWrite = (Opcode == SW);
-  assign ALUOp[0] = (Opcode == BR || Opcode == JAL);
-  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE || Opcode == JAL);
-  assign Branch = (Opcode == BR || Opcode == JAL);
+  //Só faço o Opcode != Halt para que nenhum sinal de controle seja ativado se a instrução for HALT
+  assign ALUSrc = (Opcode == LW || Opcode == SW || Opcode == I_TYPE) && (Opcode != HALT);
+  assign MemtoReg = (Opcode == LW) && (Opcode != HALT);
+  assign RegWrite = (Opcode == R_TYPE || Opcode == LW || Opcode == I_TYPE || Opcode == JAL) && (Opcode != HALT);
+  assign MemRead = (Opcode == LW) && (Opcode != HALT);
+  assign MemWrite = (Opcode == SW) && (Opcode != HALT);
+  assign ALUOp[0] = (Opcode == BR || Opcode == JAL) && (Opcode != HALT);
+  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE || Opcode == JAL) && (Opcode != HALT);
+  assign Branch = (Opcode == BR || Opcode == JAL) && (Opcode != HALT);
 endmodule
