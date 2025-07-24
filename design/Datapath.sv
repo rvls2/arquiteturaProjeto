@@ -18,6 +18,7 @@ module Datapath #(
     MemWrite,  // Register file or Immediate MUX // Memroy Writing Enable
     MemRead,  // Memroy Reading Enable
     Branch,  // Branch Enable
+    Jump,  // Jump Enable
     input  logic [          1:0] ALUOp,
     input  logic [ALU_CC_W -1:0] ALU_CC,         // ALU Control Code ( input of the ALU )
     output logic [          6:0] opcode,
@@ -42,7 +43,7 @@ module Datapath #(
   logic [INS_W-1:0] Instr;
   logic [DATA_W-1:0] Reg1, Reg2;
   logic [DATA_W-1:0] ReadData;
-  logic [DATA_W-1:0] SrcB, ALUResult;
+  logic [DATA_W-1:0] SrcB1, SrcB2, ALUResult, Pc_32;
   logic [DATA_W-1:0] ExtImm, BrImm, Old_PC_Four, BrPC;
   logic [DATA_W-1:0] WrmuxSrc;
   logic PcSel;  // mux select / flush signal
@@ -141,6 +142,7 @@ module Datapath #(
       B.MemWrite <= 0;
       B.ALUOp <= 0;
       B.Branch <= 0;
+      B.Jump <= 0;
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -159,6 +161,7 @@ module Datapath #(
       B.MemWrite <= MemWrite;
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
+      B.Jump <= Jump;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -209,11 +212,18 @@ module Datapath #(
       FBmux_Result,
       B.ImmG,
       B.ALUSrc,
-      SrcB
+      SrcB1
+  );
+  assign Pc_32 = {23'b0, B.Curr_Pc};
+  mux2 #(32) srcbmux_2 ( // para o jump, será preciso usar pc como entrada da alu
+      FBmux_Result,
+      Pc_32,
+      B.Jump,
+      SrcB2
   );
   alu alu_module (
       FAmux_Result,
-      SrcB,
+      SrcB2,
       ALU_CC,
       ALUResult
   );
@@ -221,6 +231,7 @@ module Datapath #(
       B.Curr_Pc,
       B.ImmG,
       B.Branch,
+      B.Jump,
       ALUResult,
       BrImm,
       Old_PC_Four,

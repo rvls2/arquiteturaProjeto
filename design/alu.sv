@@ -39,6 +39,8 @@ module alu#(
                     ALUResult = ($signed(SrcA) >= $signed(SrcB)) ? 1 : 0;
             4'b1100:        // SLT, SLTI, BLT
                     ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
+            4'b1101:        // JAL, JALR
+                    ALUResult = SrcB + 4'b100;
             default:
                     ALUResult = 0;
             endcase
