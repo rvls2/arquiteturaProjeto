@@ -193,7 +193,7 @@ def translate_instruction(instruction):
         bit10to1 = (imm[1:11])[::-1]
         bit11 = imm[11]
         bit19to12 = (imm[12:20])[::-1]
-        imm = bit20 + bit19to12 + bit11 + bit10to1
+        imm = bit20 + bit10to1 + bit11 + bit19to12
         binary = imm + rd + opcode[instr]
 
     elif instr == "jalr":
