@@ -5,19 +5,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	alu
 
+} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datamemory
+
+Top level modules:
+	datamemory
+
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module instructionmemory
 
 Top level modules:
 	instructionmemory
-
-} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module imm_Gen
-
-Top level modules:
-	imm_Gen
 
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -26,20 +26,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	--none--
 
-} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module RegFile
-
-Top level modules:
-	RegFile
-
-} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module BranchUnit
-
-Top level modules:
-	BranchUnit
-
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module ALUController
@@ -47,12 +33,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	ALUController
 
-} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv
+} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Memoria32
+-- Compiling module RegFile
 
 Top level modules:
-	Memoria32
+	RegFile
 
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -62,6 +48,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Datapath
+
+} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Memoria32
+
+Top level modules:
+	Memoria32
 
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v {1 {vlog -work work -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -91,13 +84,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	ramOnChip32
 
-} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ForwardingUnit
-
-Top level modules:
-	ForwardingUnit
-
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module flopr
@@ -105,12 +91,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	flopr
 
-} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv
+} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mux2
+-- Compiling module ForwardingUnit
 
 Top level modules:
-	mux2
+	ForwardingUnit
 
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -118,6 +104,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Controller
+
+} {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2
+
+Top level modules:
+	mux2
 
 } {} {}} D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv {1 {vlog -work work -sv -stats=none D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

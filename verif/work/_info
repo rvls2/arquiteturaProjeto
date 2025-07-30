@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753211884
+Z2 !s110 1753886384
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ I`RPVM1MZ;4Jg:@>=L=_o02
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1753207293
+Z5 w1753877993
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv
 !i122 0
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1753211884.000000
+Z8 !s108 1753886384.000000
 !s107 D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/verif/tb_top.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/instructionmemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux4.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/mux2.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/HazardDetection.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ForwardingUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/flopr.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/alu.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegFile.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v|D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -61,17 +61,17 @@ vALUController
 R1
 R2
 !i10b 1
-!s100 I^1hD?YIO?F=OK0;I^8l23
+!s100 DSJOkVe^NzOKzL=9=RoDL2
 R3
-IEMMkd^djQZOjLlF1bYHR33
+IA0fjHPI5B9N;J[K3eIOJC2
 R4
 S1
 R0
-R5
+w1753878377
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ALUController.sv
 !i122 0
-L0 3 32
+L0 3 33
 R7
 r1
 !s85 0
@@ -86,13 +86,13 @@ vBranchUnit
 R1
 R2
 !i10b 1
-!s100 6mfj04GQ4<NdfP3N3I?:l2
+!s100 H;TG>XS=P`ROkOnacOQ@d1
 R3
-Ii<<Li:5L:H:?220SlS?n`2
+I79Xhh^KCD@1RQ7Z6hC1hZ0
 R4
 S1
 R0
-R5
+w1753884280
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/BranchUnit.sv
 !i122 0
@@ -111,17 +111,17 @@ vController
 R1
 R2
 !i10b 1
-!s100 3?m7Z9i>idc13S]HC3GXU3
+!s100 6KBo@^]>JB6G@9CPkGT_X2
 R3
-I?]Z5BeXfWRLAGcPF>n4f^1
+Ibi?Dz711W9`zN3M9=h35K0
 R4
 S1
 R0
-R5
+w1753883096
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Controller.sv
 !i122 0
-L0 3 36
+L0 3 47
 R7
 r1
 !s85 0
@@ -142,7 +142,7 @@ IQZeLHaZSjgo92_``BmJn21
 R4
 S1
 R0
-w1753211105
+R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/datamemory.sv
 !i122 0
@@ -158,23 +158,23 @@ R9
 R10
 vDatapath
 R1
-Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 G`84YGhFe8i]]6KVcbO?20
-DXx4 work 16 Datapath_sv_unit 0 22 F_5><60;@>A^Cm[BQm0H@2
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 `5MRm>9e@X8[DPjgNV7lK0
+DXx4 work 16 Datapath_sv_unit 0 22 L;z;QD9m:Jl^RMXA:Yo?53
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 cWkHWmncDlQL`5?j6eNGC1
-IF33De4>Z<bhK4TXfTUcRG0
+!s100 ZccbBIaIUSziHDb_0_o9G0
+I=0PgNY_M9F6cD7R`RMGM@0
 !s105 Datapath_sv_unit
 S1
 R0
-R5
-Z13 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
-Z14 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
+Z13 w1753883671
+Z14 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
+Z15 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Datapath.sv
 !i122 0
-L0 5 312
+L0 5 320
 R7
 31
 R8
@@ -187,18 +187,18 @@ XDatapath_sv_unit
 R1
 R12
 R2
-VF_5><60;@>A^Cm[BQm0H@2
+VL;z;QD9m:Jl^RMXA:Yo?53
 r1
 !s85 0
 !i10b 1
-!s100 K:EP;anA:W4111N=WXz4a0
-IF_5><60;@>A^Cm[BQm0H@2
+!s100 Xg9jhR7M3BWb?TmO7;jHQ1
+IL;z;QD9m:Jl^RMXA:Yo?53
 !i103 1
 S1
 R0
-R5
 R13
 R14
+R15
 !i122 0
 L0 3 0
 R7
@@ -287,17 +287,17 @@ vimm_Gen
 R1
 R2
 !i10b 1
-!s100 MoF6VoA8LYdh2M7Z[fQ=d2
+!s100 4]dBWWW16H_l;2RABQMN43
 R3
-IzC1O_JceBQG5JQBYJW7FD2
+I=@Y0Q?n@OQAH;5I[1BOfG1
 R4
 S1
 R0
-R5
+w1753884305
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/imm_Gen.sv
 !i122 0
-L0 3 29
+L0 3 39
 R7
 r1
 !s85 0
@@ -346,7 +346,7 @@ R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32.sv
 !i122 0
-Z15 L0 26 94
+Z16 L0 26 94
 R7
 r1
 !s85 0
@@ -371,7 +371,7 @@ R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/Memoria32Data.sv
 !i122 0
-R15
+R16
 R7
 r1
 !s85 0
@@ -434,13 +434,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-!s100 k?>B3>50o;E82z7G4HUZg2
+!s100 zRN=iG>G?FJh0VPY[EKGk2
 R3
-IG`84YGhFe8i]]6KVcbO?20
-VG`84YGhFe8i]]6KVcbO?20
+I`5MRm>9e@X8[DPjgNV7lK0
+V`5MRm>9e@X8[DPjgNV7lK0
 S1
 R0
-R5
+w1753883179
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RegPack.sv
 !i122 0
@@ -467,7 +467,7 @@ R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChip32.v
 !i122 0
-Z16 L0 40 78
+Z17 L0 40 78
 R7
 r1
 !s85 0
@@ -490,7 +490,7 @@ R5
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/ramOnChipData.v
 !i122 0
-R16
+R17
 R7
 r1
 !s85 0
@@ -530,17 +530,17 @@ vriscv
 R1
 R2
 !i10b 1
-!s100 ZG:[k5[V9?jY[REj7dU`m2
+!s100 C7`fm`[J_2dUdVPnF<D_b1
 R3
-IE<fNcB`9FE?0U[iMJk3j02
+IkH75l7n3`z:kPKJ?4b`;93
 R4
 S1
 R0
-R5
+w1753883124
 8D:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv
 FD:/Users/rvls2/Downloads/arquiteturaProjeto-main/arquiteturaProjeto-main/design/RISC_V.sv
 !i122 0
-L0 3 71
+L0 3 77
 R7
 r1
 !s85 0
