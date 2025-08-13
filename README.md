@@ -201,7 +201,7 @@ Sinais das instruções:
 | 'jalr'     | 1      | 0        | 1        | 1     | 0       | 0        | 10    | 0      | 1    |
 | 'halt'     | 0      | 0        | 0        | 0     | 0       | 0        | 11    | 1      | 0    |
 
-Para essas instruções, novos sinais precisaram ser incluídos no Controller e nos estágios do pipeline. RWSel serve para definir se o valor a ser utilizado para registrar será o resultado do mux anterior (WrdSrc2) ou o PC+4, no caso de jal e jalr, PC+4 será o valor escolhido. Jalr é um sinal específico com um objetivo semelhante ao sinal Branch, ele existe pois, diferente de outras operações de alterar PC, o jalr não utiliza o valor de PC atual, mas sim o valor da soma de um valor de registradores com imediato (semelhante a um addi). Teremos Jalr e RWSel como novas saídas de Controller.  
+Para essas instruções, novos sinais precisaram ser incluídos no Controller e nos estágios do pipeline. RWSel serve para definir se o valor a ser utilizado para registrar será o resultado do mux anterior (WrmuxSrc2) ou o PC+4, no caso de jal e jalr, PC+4 será o valor escolhido. Jalr é um sinal específico com um objetivo semelhante ao sinal Branch, ele existe pois, diferente de outras operações de alterar PC, o jalr não utiliza o valor de PC atual, mas sim o valor da soma de um valor de registradores com imediato (semelhante a um addi). Teremos Jalr e RWSel como novas saídas de Controller.  
 
 Novos sinais no módulo Controller:  
 
