@@ -266,3 +266,6 @@ Por fim, outro módulo novo a ser modificado é o Datapath, os novos sinais das 
           D.RWSel,
           WrmuxSrc
       );
+
+## Conclusão
+O projeto permitiu expandir o processador RISC-V inicial, incorporando instruções lógicas, aritméticas, de deslocamento, desvios condicionais, operações de memória, chamadas de função e HALT. Foram necessárias modificações em módulos como Controller, ALUController, ALU, imm_Gen, datamemory, BranchUnit e Datapath, garantindo a correta integração no pipeline. Esse trabalho consolidou o entendimento sobre arquitetura de computadores, abrangendo sinais de controle, caminho de dados e execução de instruções, resultando em um processador mais completo e funcional.
