@@ -13,7 +13,7 @@ Nesse projeto, buscamos implementar novas instruções a um [projeto pré-defini
 Sinais das instruções:  
 | Instruções | ALUSrc | MemtoReg | RegWrite | RWSel | MemRead | MemWrite | ALUOp | Branch | JalR |
 |------------|--------|----------|----------|-------|---------|----------|-------|--------|------|
-| 'sub, xor, slt' | 0 | 0        | 1        | 0     | 0       | 0        | 10    | 0      | 0    |
+| 'sub, or, xor, slt' | 0 | 0        | 1        | 0     | 0       | 0        | 10    | 0      | 0    |
 | 'addi, slti' | 1    | 0        | 1        | 0     | 0       | 0        | 10    | 0      | 0    |
 
 Como o projeto base não tinha instruções I-Type, precisamos implementar os sinais desse tipo de instrução no módulo de Controller. Este tipo utiliza imediato (ALUSrc = 1), escreve nos registradores (RegWrite = 1) e ALUOp = 10. Segue as modificações deste módulo:  
