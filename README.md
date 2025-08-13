@@ -18,28 +18,28 @@ Sinais das instruções:
 
 Como o projeto base não tinha instruções I-Type, precisamos implementar os sinais desse tipo de instrução no módulo de Controller. Este tipo utiliza imediato (ALUSrc = 1), escreve nos registradores (RegWrite = 1) e ALUOp = 10. Segue as modificações deste módulo:  
 
-             …  
-             logic [6:0] …, I_TYPE;  
-            
-             …  
-             assign I_TYPE = 7'b0010011;  // I type  
-            
-             assign ALUSrc = (... || Opcode == I_TYPE);  
-             assign RegWrite = (... || Opcode == I_TYPE);  
-             …  
-             assign ALUOp[1] = (... || Opcode == I_TYPE);  
+     …  
+     logic [6:0] …, I_TYPE;  
+    
+     …  
+     assign I_TYPE = 7'b0010011;  // I type  
+    
+     assign ALUSrc = (... || Opcode == I_TYPE);  
+     assign RegWrite = (... || Opcode == I_TYPE);  
+     …  
+     assign ALUOp[1] = (... || Opcode == I_TYPE);  
 
 O próximo módulo a ser alterado foi o ALUController, essa modificação é necessária para alterar a saída Operation para sua utilização na alu para as instruções de sub e xor (que antes resultavam no Operation = 0010, operação na alu que realiza soma). sub gera o Operation = 0110 e xor gera o Operation = 0011. Segue as modificações deste módulo:  
 
-             …  
-             assign Operation[0] = … ||  
-                ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000));  // R\I-xor  
-            
-             assign Operation[1] = … ||  
-                ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000)); // R\I-xor  
-            
-             assign Operation[2] =  … ||  
-                ((ALUOp == 2'b10) && (Funct3 == 3'b000) && (Funct7 == 7'b0100000)); // R\I-sub  
+     …  
+     assign Operation[0] = … ||  
+        ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000));  // R\I-xor  
+    
+     assign Operation[1] = … ||  
+        ((ALUOp == 2'b10) && (Funct3 == 3'b100) && (Funct7 == 7'b0000000)); // R\I-xor  
+    
+     assign Operation[2] =  … ||  
+        ((ALUOp == 2'b10) && (Funct3 == 3'b000) && (Funct7 == 7'b0100000)); // R\I-sub  
 
 No módulo imm_Gen, foi preciso incluir instruções I_Type no mesmo imediato gerado por instruções de load, pois a geração de imediato desses tipos são iguais.  
 
@@ -84,14 +84,14 @@ Sinais das instruções:
 
 Os sinais de Controller desse tipo de instrução já estavam implementados, pois o projeto base já incluía a instrução de beq. A primeira alteração realizada foi no módulo ALUController, pois o Operation estava igual ao beq (1000). bne gera Operation = 1001, bge gera Operation = 1010 e blt gera Operation = 1100. Segue as modificações de ALUController:  
 
-            assign Operation[0] = … ||
-                ((ALUOp == 2'b01) && (Funct3 == 3'b001));  // B-bne
-          
-            assign Operation[1] = … ||
-                ((ALUOp == 2'b01) && (Funct3 == 3'b101));  // B-bge
-          
-            assign Operation[2] =  … ||
-                ((ALUOp == 2'b01) && (Funct3 == 3'b100));  // B-blt
+      assign Operation[0] = … ||
+          ((ALUOp == 2'b01) && (Funct3 == 3'b001));  // B-bne
+    
+      assign Operation[1] = … ||
+          ((ALUOp == 2'b01) && (Funct3 == 3'b101));  // B-bge
+    
+      assign Operation[2] =  … ||
+          ((ALUOp == 2'b01) && (Funct3 == 3'b100));  // B-blt
 
 No módulo alu, foi preciso implementar novas operações. Observe que o Operation de blt é igual ao de slt ou slti, essa é uma escolha proposital pois essas operações são iguais na alu. Se ALUResult = 1, significa que o desvio irá acontecer, caso contrário ele não acontecerá. Seguem as modificações de alu:  
 
@@ -120,76 +120,76 @@ Cada bit de Wr representa um byte que será escrito. Para sh, temos que o valor 
 
 Segue as modificações de datamemory:  
 
-    raddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}};
-    …
-
-    if (MemRead) begin
-      case (Funct3)
-        …
-
-        3'b000: begin  //LB
-          case (a[1:0])
-            2'b00: rd <= {{24{Dataout[7]}}, Dataout[7:0]};
-            2'b01: rd <= {{24{Dataout[15]}}, Dataout[15:8]};
-            2'b10: rd <= {{24{Dataout[23]}}, Dataout[23:16]};
-            2'b11: rd <= {{24{Dataout[31]}}, Dataout[31:24]};
-          endcase
-        end
-
-        3'b100: begin  //LBU
-          case (a[1:0])
-            2'b00: rd <= {24'b0, Dataout[7:0]};
-            2'b01: rd <= {24'b0, Dataout[15:8]};
-            2'b10: rd <= {24'b0, Dataout[23:16]};
-            2'b11: rd <= {24'b0, Dataout[31:24]};
-          endcase
-        end
-
-        3'b001: begin  //LH
-          if (a[1] == 1'b0) rd <= {{16{Dataout[15]}}, Dataout[15:0]};
-          else rd <= {{16{Dataout[31]}}, Dataout[31:16]};
-        end
-
-        …
-      endcase
-    end else if (MemWrite) begin
-      case (Funct3)
-        …
-
-        3'b000: begin  //SB
-          case (a[1:0])
-            2'b00: begin
-              Wr <= 4'b0001;
-              Datain <= {24'h0, wd[7:0]};
-            end
-            2'b01: begin
-              Wr <= 4'b0010;
-              Datain <= {16'h0, wd[7:0], 8'h0};
-            end
-            2'b10: begin
-              Wr <= 4'b0100;
-              Datain <= {8'h0, wd[7:0], 16'h0};
-            end
-            2'b11: begin
-              Wr <= 4'b1000;
-              Datain <= {wd[7:0], 24'h0};
-            end
-          endcase
-        end
-
-        3'b001: begin  //SH
-          if (a[1] == 1'b0) begin
-            Wr <= 4'b0011;
-            Datain <= {16'h0, wd[15:0]};
-          end else begin
-            Wr <= 4'b1100;
-            Datain <= {wd[15:0], 16'h0};
+      raddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}};
+      …
+  
+      if (MemRead) begin
+        case (Funct3)
+          …
+  
+          3'b000: begin  //LB
+            case (a[1:0])
+              2'b00: rd <= {{24{Dataout[7]}}, Dataout[7:0]};
+              2'b01: rd <= {{24{Dataout[15]}}, Dataout[15:8]};
+              2'b10: rd <= {{24{Dataout[23]}}, Dataout[23:16]};
+              2'b11: rd <= {{24{Dataout[31]}}, Dataout[31:24]};
+            endcase
           end
-        end
-
-        …
-      endcase
-    end
+  
+          3'b100: begin  //LBU
+            case (a[1:0])
+              2'b00: rd <= {24'b0, Dataout[7:0]};
+              2'b01: rd <= {24'b0, Dataout[15:8]};
+              2'b10: rd <= {24'b0, Dataout[23:16]};
+              2'b11: rd <= {24'b0, Dataout[31:24]};
+            endcase
+          end
+  
+          3'b001: begin  //LH
+            if (a[1] == 1'b0) rd <= {{16{Dataout[15]}}, Dataout[15:0]};
+            else rd <= {{16{Dataout[31]}}, Dataout[31:16]};
+          end
+  
+          …
+        endcase
+      end else if (MemWrite) begin
+        case (Funct3)
+          …
+  
+          3'b000: begin  //SB
+            case (a[1:0])
+              2'b00: begin
+                Wr <= 4'b0001;
+                Datain <= {24'h0, wd[7:0]};
+              end
+              2'b01: begin
+                Wr <= 4'b0010;
+                Datain <= {16'h0, wd[7:0], 8'h0};
+              end
+              2'b10: begin
+                Wr <= 4'b0100;
+                Datain <= {8'h0, wd[7:0], 16'h0};
+              end
+              2'b11: begin
+                Wr <= 4'b1000;
+                Datain <= {wd[7:0], 24'h0};
+              end
+            endcase
+          end
+  
+          3'b001: begin  //SH
+            if (a[1] == 1'b0) begin
+              Wr <= 4'b0011;
+              Datain <= {16'h0, wd[15:0]};
+            end else begin
+              Wr <= 4'b1100;
+              Datain <= {wd[15:0], 16'h0};
+            end
+          end
+  
+          …
+        endcase
+      end
 
 ## Instruções de Chamada de Função
 Sinais das instruções:  
