@@ -50,6 +50,8 @@ No módulo imm_Gen, foi preciso incluir instruções I_Type no mesmo imediato ge
 No módulo alu, foi preciso implementar novos casos para valores de Operation. Observamos que a instrução addi já estava implementada, desde que seu imediato era escolhido antes de entrar na alu, ele usa o Operation de soma (0010). Seguem as modificações deste módulo:
 
              …  
+             4'b0001:        // OR  
+                    ALUResult = SrcA | SrcB;  
              4'b0010:        // ADD, ADDI  
                     ALUResult = $signed(SrcA) + $signed(SrcB);  
              4'b0011:        // XOR  
